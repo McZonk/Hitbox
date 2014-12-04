@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		506C1C981A2FA4110034ECD1 /* Hitbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1C971A2FA4110034ECD1 /* Hitbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1C9E1A2FA4110034ECD1 /* Hitbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506C1C921A2FA4110034ECD1 /* Hitbox.framework */; };
+		506C1CA51A2FA4110034ECD1 /* HitboxStreamingAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CA41A2FA4110034ECD1 /* HitboxStreamingAPITests.m */; };
+		506C1CBF1A2FA8D00034ECD1 /* NSHTTPURLResponse+HitboxHeaderFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1CBB1A2FA8D00034ECD1 /* NSHTTPURLResponse+HitboxHeaderFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1CC01A2FA8D00034ECD1 /* NSHTTPURLResponse+HitboxHeaderFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CBC1A2FA8D00034ECD1 /* NSHTTPURLResponse+HitboxHeaderFields.m */; };
+		506C1CC11A2FA8D00034ECD1 /* NSURLComponents+HitboxQueryComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1CBD1A2FA8D00034ECD1 /* NSURLComponents+HitboxQueryComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1CC21A2FA8D00034ECD1 /* NSURLComponents+HitboxQueryComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CBE1A2FA8D00034ECD1 /* NSURLComponents+HitboxQueryComponents.m */; };
+		506C1CD11A2FA8E20034ECD1 /* HitboxURLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1CC31A2FA8E20034ECD1 /* HitboxURLConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1CD21A2FA8E20034ECD1 /* HitboxURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CC41A2FA8E20034ECD1 /* HitboxURLConnection.m */; };
+		506C1CD51A2FA8E20034ECD1 /* HitboxURLConnection+SharedOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1CC71A2FA8E20034ECD1 /* HitboxURLConnection+SharedOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1CD61A2FA8E20034ECD1 /* HitboxURLConnection+SharedOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CC81A2FA8E20034ECD1 /* HitboxURLConnection+SharedOperationQueue.m */; };
+		506C1CD71A2FA8E20034ECD1 /* HitboxURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1CC91A2FA8E20034ECD1 /* HitboxURLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1CD81A2FA8E20034ECD1 /* HitboxURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CCA1A2FA8E20034ECD1 /* HitboxURLRequest.m */; };
+		506C1CD91A2FA8E20034ECD1 /* HitboxURLResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1CCB1A2FA8E20034ECD1 /* HitboxURLResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1CDA1A2FA8E20034ECD1 /* HitboxURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CCC1A2FA8E20034ECD1 /* HitboxURLResponse.m */; };
+		506C1CDB1A2FA8E20034ECD1 /* HitboxJSONRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1CCD1A2FA8E20034ECD1 /* HitboxJSONRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1CDC1A2FA8E20034ECD1 /* HitboxJSONRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CCE1A2FA8E20034ECD1 /* HitboxJSONRequest.m */; };
+		506C1CDD1A2FA8E20034ECD1 /* HitboxJSONResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1CCF1A2FA8E20034ECD1 /* HitboxJSONResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1CDE1A2FA8E20034ECD1 /* HitboxJSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CD01A2FA8E20034ECD1 /* HitboxJSONResponse.m */; };
+		506C1CEB1A2FAA000034ECD1 /* HitboxAuthToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1CE51A2FAA000034ECD1 /* HitboxAuthToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1CEC1A2FAA000034ECD1 /* HitboxAuthToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CE61A2FAA000034ECD1 /* HitboxAuthToken.m */; };
+		506C1D041A2FB1F30034ECD1 /* HitboxAuthTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1D021A2FB1F30034ECD1 /* HitboxAuthTokenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1D051A2FB1F30034ECD1 /* HitboxAuthTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1D031A2FB1F30034ECD1 /* HitboxAuthTokenRequest.m */; };
+		506C1D081A2FB20E0034ECD1 /* HitboxAuthTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1D061A2FB20E0034ECD1 /* HitboxAuthTokenResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1D091A2FB20E0034ECD1 /* HitboxAuthTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1D071A2FB20E0034ECD1 /* HitboxAuthTokenResponse.m */; };
+		506C1D0E1A2FB7F70034ECD1 /* HitboxStreamIngestResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1D0C1A2FB7F70034ECD1 /* HitboxStreamIngestResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1D0F1A2FB7F70034ECD1 /* HitboxStreamIngestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1D0D1A2FB7F70034ECD1 /* HitboxStreamIngestResponse.m */; };
+		506C1D121A2FB8080034ECD1 /* HitboxStreamIngestRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1D101A2FB8080034ECD1 /* HitboxStreamIngestRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1D131A2FB8080034ECD1 /* HitboxStreamIngestRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1D111A2FB8080034ECD1 /* HitboxStreamIngestRequest.m */; };
+		506C1D161A2FCC150034ECD1 /* HitboxStreamIngest.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1D141A2FCC150034ECD1 /* HitboxStreamIngest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1D171A2FCC150034ECD1 /* HitboxStreamIngest.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1D151A2FCC150034ECD1 /* HitboxStreamIngest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		506C1C9F1A2FA4110034ECD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506C1C891A2FA4110034ECD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506C1C911A2FA4110034ECD1;
+			remoteInfo = Hitbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		506C1C921A2FA4110034ECD1 /* Hitbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hitbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		506C1C961A2FA4110034ECD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506C1C971A2FA4110034ECD1 /* Hitbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hitbox.h; sourceTree = "<group>"; };
+		506C1C9D1A2FA4110034ECD1 /* HitboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HitboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		506C1CA31A2FA4110034ECD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506C1CA41A2FA4110034ECD1 /* HitboxStreamingAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitboxStreamingAPITests.m; sourceTree = "<group>"; };
+		506C1CBB1A2FA8D00034ECD1 /* NSHTTPURLResponse+HitboxHeaderFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPURLResponse+HitboxHeaderFields.h"; sourceTree = "<group>"; };
+		506C1CBC1A2FA8D00034ECD1 /* NSHTTPURLResponse+HitboxHeaderFields.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPURLResponse+HitboxHeaderFields.m"; sourceTree = "<group>"; };
+		506C1CBD1A2FA8D00034ECD1 /* NSURLComponents+HitboxQueryComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLComponents+HitboxQueryComponents.h"; sourceTree = "<group>"; };
+		506C1CBE1A2FA8D00034ECD1 /* NSURLComponents+HitboxQueryComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLComponents+HitboxQueryComponents.m"; sourceTree = "<group>"; };
+		506C1CC31A2FA8E20034ECD1 /* HitboxURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxURLConnection.h; sourceTree = "<group>"; };
+		506C1CC41A2FA8E20034ECD1 /* HitboxURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxURLConnection.m; sourceTree = "<group>"; };
+		506C1CC71A2FA8E20034ECD1 /* HitboxURLConnection+SharedOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HitboxURLConnection+SharedOperationQueue.h"; sourceTree = "<group>"; };
+		506C1CC81A2FA8E20034ECD1 /* HitboxURLConnection+SharedOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HitboxURLConnection+SharedOperationQueue.m"; sourceTree = "<group>"; };
+		506C1CC91A2FA8E20034ECD1 /* HitboxURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxURLRequest.h; sourceTree = "<group>"; };
+		506C1CCA1A2FA8E20034ECD1 /* HitboxURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxURLRequest.m; sourceTree = "<group>"; };
+		506C1CCB1A2FA8E20034ECD1 /* HitboxURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxURLResponse.h; sourceTree = "<group>"; };
+		506C1CCC1A2FA8E20034ECD1 /* HitboxURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxURLResponse.m; sourceTree = "<group>"; };
+		506C1CCD1A2FA8E20034ECD1 /* HitboxJSONRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxJSONRequest.h; sourceTree = "<group>"; };
+		506C1CCE1A2FA8E20034ECD1 /* HitboxJSONRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxJSONRequest.m; sourceTree = "<group>"; };
+		506C1CCF1A2FA8E20034ECD1 /* HitboxJSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxJSONResponse.h; sourceTree = "<group>"; };
+		506C1CD01A2FA8E20034ECD1 /* HitboxJSONResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxJSONResponse.m; sourceTree = "<group>"; };
+		506C1CE51A2FAA000034ECD1 /* HitboxAuthToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxAuthToken.h; sourceTree = "<group>"; };
+		506C1CE61A2FAA000034ECD1 /* HitboxAuthToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxAuthToken.m; sourceTree = "<group>"; };
+		506C1D021A2FB1F30034ECD1 /* HitboxAuthTokenRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxAuthTokenRequest.h; sourceTree = "<group>"; };
+		506C1D031A2FB1F30034ECD1 /* HitboxAuthTokenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxAuthTokenRequest.m; sourceTree = "<group>"; };
+		506C1D061A2FB20E0034ECD1 /* HitboxAuthTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxAuthTokenResponse.h; sourceTree = "<group>"; };
+		506C1D071A2FB20E0034ECD1 /* HitboxAuthTokenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxAuthTokenResponse.m; sourceTree = "<group>"; };
+		506C1D0A1A2FB5050034ECD1 /* HitboxLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitboxLogin.h; sourceTree = "<group>"; };
+		506C1D0C1A2FB7F70034ECD1 /* HitboxStreamIngestResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxStreamIngestResponse.h; sourceTree = "<group>"; };
+		506C1D0D1A2FB7F70034ECD1 /* HitboxStreamIngestResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxStreamIngestResponse.m; sourceTree = "<group>"; };
+		506C1D101A2FB8080034ECD1 /* HitboxStreamIngestRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxStreamIngestRequest.h; sourceTree = "<group>"; };
+		506C1D111A2FB8080034ECD1 /* HitboxStreamIngestRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxStreamIngestRequest.m; sourceTree = "<group>"; };
+		506C1D141A2FCC150034ECD1 /* HitboxStreamIngest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxStreamIngest.h; sourceTree = "<group>"; };
+		506C1D151A2FCC150034ECD1 /* HitboxStreamIngest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxStreamIngest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		506C1C8E1A2FA4110034ECD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506C1C9A1A2FA4110034ECD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506C1C9E1A2FA4110034ECD1 /* Hitbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		506C1C881A2FA4110034ECD1 = {
+			isa = PBXGroup;
+			children = (
+				506C1C941A2FA4110034ECD1 /* Hitbox */,
+				506C1CA11A2FA4110034ECD1 /* HitboxTests */,
+				506C1C931A2FA4110034ECD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		506C1C931A2FA4110034ECD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				506C1C921A2FA4110034ECD1 /* Hitbox.framework */,
+				506C1C9D1A2FA4110034ECD1 /* HitboxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		506C1C941A2FA4110034ECD1 /* Hitbox */ = {
+			isa = PBXGroup;
+			children = (
+				506C1C971A2FA4110034ECD1 /* Hitbox.h */,
+				506C1CE11A2FA92E0034ECD1 /* Categories */,
+				506C1CDF1A2FA90F0034ECD1 /* URL */,
+				506C1CE01A2FA91E0034ECD1 /* JSON */,
+				506C1CEF1A2FACCB0034ECD1 /* AuthToken */,
+				506C1D0B1A2FB7AD0034ECD1 /* Streamingest */,
+				506C1C951A2FA4110034ECD1 /* Supporting Files */,
+			);
+			path = Hitbox;
+			sourceTree = "<group>";
+		};
+		506C1C951A2FA4110034ECD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				506C1C961A2FA4110034ECD1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		506C1CA11A2FA4110034ECD1 /* HitboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				506C1D0A1A2FB5050034ECD1 /* HitboxLogin.h */,
+				506C1CA41A2FA4110034ECD1 /* HitboxStreamingAPITests.m */,
+				506C1CA21A2FA4110034ECD1 /* Supporting Files */,
+			);
+			path = HitboxTests;
+			sourceTree = "<group>";
+		};
+		506C1CA21A2FA4110034ECD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				506C1CA31A2FA4110034ECD1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		506C1CDF1A2FA90F0034ECD1 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				506C1CC31A2FA8E20034ECD1 /* HitboxURLConnection.h */,
+				506C1CC41A2FA8E20034ECD1 /* HitboxURLConnection.m */,
+				506C1CC71A2FA8E20034ECD1 /* HitboxURLConnection+SharedOperationQueue.h */,
+				506C1CC81A2FA8E20034ECD1 /* HitboxURLConnection+SharedOperationQueue.m */,
+				506C1CC91A2FA8E20034ECD1 /* HitboxURLRequest.h */,
+				506C1CCA1A2FA8E20034ECD1 /* HitboxURLRequest.m */,
+				506C1CCB1A2FA8E20034ECD1 /* HitboxURLResponse.h */,
+				506C1CCC1A2FA8E20034ECD1 /* HitboxURLResponse.m */,
+			);
+			name = URL;
+			sourceTree = "<group>";
+		};
+		506C1CE01A2FA91E0034ECD1 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				506C1CCD1A2FA8E20034ECD1 /* HitboxJSONRequest.h */,
+				506C1CCE1A2FA8E20034ECD1 /* HitboxJSONRequest.m */,
+				506C1CCF1A2FA8E20034ECD1 /* HitboxJSONResponse.h */,
+				506C1CD01A2FA8E20034ECD1 /* HitboxJSONResponse.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		506C1CE11A2FA92E0034ECD1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				506C1CBB1A2FA8D00034ECD1 /* NSHTTPURLResponse+HitboxHeaderFields.h */,
+				506C1CBC1A2FA8D00034ECD1 /* NSHTTPURLResponse+HitboxHeaderFields.m */,
+				506C1CBD1A2FA8D00034ECD1 /* NSURLComponents+HitboxQueryComponents.h */,
+				506C1CBE1A2FA8D00034ECD1 /* NSURLComponents+HitboxQueryComponents.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		506C1CEF1A2FACCB0034ECD1 /* AuthToken */ = {
+			isa = PBXGroup;
+			children = (
+				506C1CE51A2FAA000034ECD1 /* HitboxAuthToken.h */,
+				506C1CE61A2FAA000034ECD1 /* HitboxAuthToken.m */,
+				506C1D021A2FB1F30034ECD1 /* HitboxAuthTokenRequest.h */,
+				506C1D031A2FB1F30034ECD1 /* HitboxAuthTokenRequest.m */,
+				506C1D061A2FB20E0034ECD1 /* HitboxAuthTokenResponse.h */,
+				506C1D071A2FB20E0034ECD1 /* HitboxAuthTokenResponse.m */,
+			);
+			name = AuthToken;
+			sourceTree = "<group>";
+		};
+		506C1D0B1A2FB7AD0034ECD1 /* Streamingest */ = {
+			isa = PBXGroup;
+			children = (
+				506C1D141A2FCC150034ECD1 /* HitboxStreamIngest.h */,
+				506C1D151A2FCC150034ECD1 /* HitboxStreamIngest.m */,
+				506C1D101A2FB8080034ECD1 /* HitboxStreamIngestRequest.h */,
+				506C1D111A2FB8080034ECD1 /* HitboxStreamIngestRequest.m */,
+				506C1D0C1A2FB7F70034ECD1 /* HitboxStreamIngestResponse.h */,
+				506C1D0D1A2FB7F70034ECD1 /* HitboxStreamIngestResponse.m */,
+			);
+			name = Streamingest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		506C1C8F1A2FA4110034ECD1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506C1D161A2FCC150034ECD1 /* HitboxStreamIngest.h in Headers */,
+				506C1CD51A2FA8E20034ECD1 /* HitboxURLConnection+SharedOperationQueue.h in Headers */,
+				506C1D0E1A2FB7F70034ECD1 /* HitboxStreamIngestResponse.h in Headers */,
+				506C1CC11A2FA8D00034ECD1 /* NSURLComponents+HitboxQueryComponents.h in Headers */,
+				506C1CEB1A2FAA000034ECD1 /* HitboxAuthToken.h in Headers */,
+				506C1CDD1A2FA8E20034ECD1 /* HitboxJSONResponse.h in Headers */,
+				506C1CD11A2FA8E20034ECD1 /* HitboxURLConnection.h in Headers */,
+				506C1C981A2FA4110034ECD1 /* Hitbox.h in Headers */,
+				506C1D081A2FB20E0034ECD1 /* HitboxAuthTokenResponse.h in Headers */,
+				506C1D041A2FB1F30034ECD1 /* HitboxAuthTokenRequest.h in Headers */,
+				506C1CBF1A2FA8D00034ECD1 /* NSHTTPURLResponse+HitboxHeaderFields.h in Headers */,
+				506C1CDB1A2FA8E20034ECD1 /* HitboxJSONRequest.h in Headers */,
+				506C1D121A2FB8080034ECD1 /* HitboxStreamIngestRequest.h in Headers */,
+				506C1CD91A2FA8E20034ECD1 /* HitboxURLResponse.h in Headers */,
+				506C1CD71A2FA8E20034ECD1 /* HitboxURLRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		506C1C911A2FA4110034ECD1 /* Hitbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506C1CA81A2FA4110034ECD1 /* Build configuration list for PBXNativeTarget "Hitbox" */;
+			buildPhases = (
+				506C1C8D1A2FA4110034ECD1 /* Sources */,
+				506C1C8E1A2FA4110034ECD1 /* Frameworks */,
+				506C1C8F1A2FA4110034ECD1 /* Headers */,
+				506C1C901A2FA4110034ECD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hitbox;
+			productName = Hitbox;
+			productReference = 506C1C921A2FA4110034ECD1 /* Hitbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		506C1C9C1A2FA4110034ECD1 /* HitboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506C1CAB1A2FA4110034ECD1 /* Build configuration list for PBXNativeTarget "HitboxTests" */;
+			buildPhases = (
+				506C1C991A2FA4110034ECD1 /* Sources */,
+				506C1C9A1A2FA4110034ECD1 /* Frameworks */,
+				506C1C9B1A2FA4110034ECD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				506C1CA01A2FA4110034ECD1 /* PBXTargetDependency */,
+			);
+			name = HitboxTests;
+			productName = HitboxTests;
+			productReference = 506C1C9D1A2FA4110034ECD1 /* HitboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		506C1C891A2FA4110034ECD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = McZonk;
+				TargetAttributes = {
+					506C1C911A2FA4110034ECD1 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					506C1C9C1A2FA4110034ECD1 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 506C1C8C1A2FA4110034ECD1 /* Build configuration list for PBXProject "Hitbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 506C1C881A2FA4110034ECD1;
+			productRefGroup = 506C1C931A2FA4110034ECD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				506C1C911A2FA4110034ECD1 /* Hitbox */,
+				506C1C9C1A2FA4110034ECD1 /* HitboxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		506C1C901A2FA4110034ECD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506C1C9B1A2FA4110034ECD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		506C1C8D1A2FA4110034ECD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506C1CD61A2FA8E20034ECD1 /* HitboxURLConnection+SharedOperationQueue.m in Sources */,
+				506C1CEC1A2FAA000034ECD1 /* HitboxAuthToken.m in Sources */,
+				506C1D051A2FB1F30034ECD1 /* HitboxAuthTokenRequest.m in Sources */,
+				506C1D171A2FCC150034ECD1 /* HitboxStreamIngest.m in Sources */,
+				506C1CDE1A2FA8E20034ECD1 /* HitboxJSONResponse.m in Sources */,
+				506C1D091A2FB20E0034ECD1 /* HitboxAuthTokenResponse.m in Sources */,
+				506C1CDA1A2FA8E20034ECD1 /* HitboxURLResponse.m in Sources */,
+				506C1CC21A2FA8D00034ECD1 /* NSURLComponents+HitboxQueryComponents.m in Sources */,
+				506C1CDC1A2FA8E20034ECD1 /* HitboxJSONRequest.m in Sources */,
+				506C1CC01A2FA8D00034ECD1 /* NSHTTPURLResponse+HitboxHeaderFields.m in Sources */,
+				506C1D0F1A2FB7F70034ECD1 /* HitboxStreamIngestResponse.m in Sources */,
+				506C1CD81A2FA8E20034ECD1 /* HitboxURLRequest.m in Sources */,
+				506C1CD21A2FA8E20034ECD1 /* HitboxURLConnection.m in Sources */,
+				506C1D131A2FB8080034ECD1 /* HitboxStreamIngestRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506C1C991A2FA4110034ECD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506C1CA51A2FA4110034ECD1 /* HitboxStreamingAPITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		506C1CA01A2FA4110034ECD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506C1C911A2FA4110034ECD1 /* Hitbox */;
+			targetProxy = 506C1C9F1A2FA4110034ECD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		506C1CA61A2FA4110034ECD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		506C1CA71A2FA4110034ECD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		506C1CA91A2FA4110034ECD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Hitbox/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		506C1CAA1A2FA4110034ECD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Hitbox/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		506C1CAC1A2FA4110034ECD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HitboxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		506C1CAD1A2FA4110034ECD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HitboxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		506C1C8C1A2FA4110034ECD1 /* Build configuration list for PBXProject "Hitbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506C1CA61A2FA4110034ECD1 /* Debug */,
+				506C1CA71A2FA4110034ECD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506C1CA81A2FA4110034ECD1 /* Build configuration list for PBXNativeTarget "Hitbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506C1CA91A2FA4110034ECD1 /* Debug */,
+				506C1CAA1A2FA4110034ECD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506C1CAB1A2FA4110034ECD1 /* Build configuration list for PBXNativeTarget "HitboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506C1CAC1A2FA4110034ECD1 /* Debug */,
+				506C1CAD1A2FA4110034ECD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 506C1C891A2FA4110034ECD1 /* Project object */;
+}
