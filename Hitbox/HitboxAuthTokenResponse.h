@@ -1,11 +1,11 @@
 #import "HitboxJSONResponse.h"
 
 
-@class HitboxAuthToken;
+@class HitboxAuthorization;
 
 
 @interface HitboxAuthTokenResponse : HitboxJSONResponse
 
-@property (nonatomic, strong, readonly) HitboxAuthToken *authToken;
+@property (nonatomic, strong, readonly) HitboxAuthorization *authorization;
 
 @end

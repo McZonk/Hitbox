@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface HitboxAuthToken : NSObject
+@interface HitboxAuthorization : NSObject <NSCopying>
 
 - (instancetype)initWithUsername:(NSString *)username authToken:(NSString *)authToken;
 

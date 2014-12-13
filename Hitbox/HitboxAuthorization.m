@@ -1,7 +1,7 @@
-#import "HitboxAuthToken.h"
+#import "HitboxAuthorization.h"
 
 
-@interface HitboxAuthToken ()
+@interface HitboxAuthorization ()
 
 @property (nonatomic, copy) NSString *username;
 @property (nonatomic, copy) NSString *authToken;
@@ -9,14 +9,23 @@
 @end
 
 
-@implementation HitboxAuthToken
+@implementation HitboxAuthorization
 
 - (instancetype)initWithUsername:(NSString *)username authToken:(NSString *)authToken
 {
 	self = [super init];
 	if(self != nil)
 	{
+		if(username == nil)
+		{
+			return nil;
+		}
 		self.username = username;
+		
+		if(authToken == nil)
+		{
+			return nil;
+		}
 		self.authToken = authToken;
 	}
 	return self;
@@ -24,7 +33,7 @@
 
 - (instancetype)copyWithZone:(NSZone *)zone
 {
-	return [[HitboxAuthToken alloc] initWithUsername:self.username authToken:self.authToken];
+	return [[HitboxAuthorization alloc] initWithUsername:self.username authToken:self.authToken];
 }
 
 - (NSString *)description

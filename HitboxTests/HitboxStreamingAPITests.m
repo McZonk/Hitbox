@@ -14,12 +14,12 @@
 #import "HitboxLogin.h"
 
 
-static HitboxAuthToken *sharedAuthToken = nil;
+static HitboxAuthorization *sharedAuthorization = nil;
 
 
 @interface HitboxTests : XCTestCase
 
-@property (nonatomic, strong) HitboxAuthToken *authToken;
+@property (nonatomic, strong) HitboxAuthorization *authToken;
 
 @end
 
@@ -41,7 +41,6 @@ static HitboxAuthToken *sharedAuthToken = nil;
 	XCTestExpectation *expectation = [self expectationWithDescription:[NSString stringWithFormat:@"%s", __FUNCTION__]];
 	
 	HitboxAuthTokenRequest *request = [[HitboxAuthTokenRequest alloc] initWithUsername:HITBOX_TEST_USERNAME password:HITBOX_TEST_PASSWORD applicationIdentifier:HITBOX_TEST_APPLICATIONIDENTIFIER];
-	
 	HitboxURLConnection *connection = [[HitboxURLConnection alloc] initWithRequest:request queue:nil completionHandler:^(HitboxURLResponse *response, NSError *error) {
 		XCTAssert(response != nil);
 		XCTAssert(error == nil, @"%@", error);
@@ -49,13 +48,13 @@ static HitboxAuthToken *sharedAuthToken = nil;
 		
 		HitboxAuthTokenResponse *authTokenResponse = (HitboxAuthTokenResponse *)response;
 		
-		HitboxAuthToken *authToken = authTokenResponse.authToken;
+		HitboxAuthorization *authorization = authTokenResponse.authorization;
 		
-		XCTAssert(authToken != nil);
-		XCTAssert(authToken.username != nil);
-		XCTAssert(authToken.authToken != nil);
+		XCTAssert(authorization != nil);
+		XCTAssert(authorization.username != nil);
+		XCTAssert(authorization.authToken != nil);
 		
-		sharedAuthToken = authToken;
+		sharedAuthorization = authorization;
 		
 		[expectation fulfill];
 	}];
@@ -70,12 +69,11 @@ static HitboxAuthToken *sharedAuthToken = nil;
 {
 	XCTestExpectation *expectation = [self expectationWithDescription:[NSString stringWithFormat:@"%s", __FUNCTION__]];
 
-	HitboxAuthToken *authToken = sharedAuthToken;
+	HitboxAuthorization *authorization = sharedAuthorization;
 
 	XCTAssert(authToken != nil);
 	
-	HitboxStreamIngestRequest *request = [[HitboxStreamIngestRequest alloc] initWithAuthToken:authToken];
-	
+	HitboxStreamIngestRequest *request = [[HitboxStreamIngestRequest alloc] initWithAuthorization:authorization];
 	HitboxURLConnection *connection = [[HitboxURLConnection alloc] initWithRequest:request queue:nil completionHandler:^(HitboxURLResponse *response, NSError *error) {
 		XCTAssert(response != nil);
 		XCTAssert(error == nil, @"%@", error);

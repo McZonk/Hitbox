@@ -5,6 +5,7 @@
 
 @interface HitboxStreamIngestResponse ()
 
+@property (nonatomic, strong) HitboxStreamIngest *defaultIngest;
 @property (nonatomic, copy) NSArray *ingests;
 
 @property (nonatomic, copy) NSString *streamName;
@@ -22,6 +23,15 @@
 	if(self != nil)
 	{
 		//NSLog(@"%@", JSON);
+		
+		{
+			NSString *JSONURL = JSON[@"stream_default_ingest_url"];
+			if([JSONURL isKindOfClass:NSString.class])
+			{
+				HitboxStreamIngest *ingest = [[HitboxStreamIngest alloc] initWithURL:[NSURL URLWithString:JSONURL] name:@"Default"];
+				self.defaultIngest = ingest;
+			}
+		}
 		
 		NSArray *JSONingests = JSON[@"stream_ingest_list"];
 		if([JSONingests isKindOfClass:NSArray.class])

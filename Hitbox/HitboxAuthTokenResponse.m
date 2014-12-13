@@ -1,12 +1,12 @@
 #import "HitboxAuthTokenResponse.h"
 
-#import "HitboxAuthToken.h"
+#import "HitboxAuthorization.h"
 #import "HitboxAuthTokenRequest.h"
 
 
 @interface HitboxAuthTokenResponse ()
 
-@property (nonatomic, strong) HitboxAuthToken *authToken;
+@property (nonatomic, strong) HitboxAuthorization *authorization;
 
 @end
 
@@ -32,7 +32,7 @@
 			return nil;
 		}
 		
-		self.authToken = [[HitboxAuthToken alloc] initWithUsername:username authToken:authToken];
+		self.authorization = [[HitboxAuthorization alloc] initWithUsername:username authToken:authToken];
 	}
 	return self;
 }

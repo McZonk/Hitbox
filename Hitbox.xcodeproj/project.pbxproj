@@ -26,8 +26,8 @@
 		506C1CDC1A2FA8E20034ECD1 /* HitboxJSONRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CCE1A2FA8E20034ECD1 /* HitboxJSONRequest.m */; };
 		506C1CDD1A2FA8E20034ECD1 /* HitboxJSONResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1CCF1A2FA8E20034ECD1 /* HitboxJSONResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		506C1CDE1A2FA8E20034ECD1 /* HitboxJSONResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CD01A2FA8E20034ECD1 /* HitboxJSONResponse.m */; };
-		506C1CEB1A2FAA000034ECD1 /* HitboxAuthToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1CE51A2FAA000034ECD1 /* HitboxAuthToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		506C1CEC1A2FAA000034ECD1 /* HitboxAuthToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CE61A2FAA000034ECD1 /* HitboxAuthToken.m */; };
+		506C1CEB1A2FAA000034ECD1 /* HitboxAuthorization.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1CE51A2FAA000034ECD1 /* HitboxAuthorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C1CEC1A2FAA000034ECD1 /* HitboxAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1CE61A2FAA000034ECD1 /* HitboxAuthorization.m */; };
 		506C1D041A2FB1F30034ECD1 /* HitboxAuthTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1D021A2FB1F30034ECD1 /* HitboxAuthTokenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		506C1D051A2FB1F30034ECD1 /* HitboxAuthTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 506C1D031A2FB1F30034ECD1 /* HitboxAuthTokenRequest.m */; };
 		506C1D081A2FB20E0034ECD1 /* HitboxAuthTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C1D061A2FB20E0034ECD1 /* HitboxAuthTokenResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -73,8 +73,8 @@
 		506C1CCE1A2FA8E20034ECD1 /* HitboxJSONRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxJSONRequest.m; sourceTree = "<group>"; };
 		506C1CCF1A2FA8E20034ECD1 /* HitboxJSONResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxJSONResponse.h; sourceTree = "<group>"; };
 		506C1CD01A2FA8E20034ECD1 /* HitboxJSONResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxJSONResponse.m; sourceTree = "<group>"; };
-		506C1CE51A2FAA000034ECD1 /* HitboxAuthToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxAuthToken.h; sourceTree = "<group>"; };
-		506C1CE61A2FAA000034ECD1 /* HitboxAuthToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxAuthToken.m; sourceTree = "<group>"; };
+		506C1CE51A2FAA000034ECD1 /* HitboxAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxAuthorization.h; sourceTree = "<group>"; };
+		506C1CE61A2FAA000034ECD1 /* HitboxAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxAuthorization.m; sourceTree = "<group>"; };
 		506C1D021A2FB1F30034ECD1 /* HitboxAuthTokenRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxAuthTokenRequest.h; sourceTree = "<group>"; };
 		506C1D031A2FB1F30034ECD1 /* HitboxAuthTokenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitboxAuthTokenRequest.m; sourceTree = "<group>"; };
 		506C1D061A2FB20E0034ECD1 /* HitboxAuthTokenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitboxAuthTokenResponse.h; sourceTree = "<group>"; };
@@ -205,8 +205,8 @@
 		506C1CEF1A2FACCB0034ECD1 /* AuthToken */ = {
 			isa = PBXGroup;
 			children = (
-				506C1CE51A2FAA000034ECD1 /* HitboxAuthToken.h */,
-				506C1CE61A2FAA000034ECD1 /* HitboxAuthToken.m */,
+				506C1CE51A2FAA000034ECD1 /* HitboxAuthorization.h */,
+				506C1CE61A2FAA000034ECD1 /* HitboxAuthorization.m */,
 				506C1D021A2FB1F30034ECD1 /* HitboxAuthTokenRequest.h */,
 				506C1D031A2FB1F30034ECD1 /* HitboxAuthTokenRequest.m */,
 				506C1D061A2FB20E0034ECD1 /* HitboxAuthTokenResponse.h */,
@@ -239,7 +239,7 @@
 				506C1CD51A2FA8E20034ECD1 /* HitboxURLConnection+SharedOperationQueue.h in Headers */,
 				506C1D0E1A2FB7F70034ECD1 /* HitboxStreamIngestResponse.h in Headers */,
 				506C1CC11A2FA8D00034ECD1 /* NSURLComponents+HitboxQueryComponents.h in Headers */,
-				506C1CEB1A2FAA000034ECD1 /* HitboxAuthToken.h in Headers */,
+				506C1CEB1A2FAA000034ECD1 /* HitboxAuthorization.h in Headers */,
 				506C1CDD1A2FA8E20034ECD1 /* HitboxJSONResponse.h in Headers */,
 				506C1CD11A2FA8E20034ECD1 /* HitboxURLConnection.h in Headers */,
 				506C1C981A2FA4110034ECD1 /* Hitbox.h in Headers */,
@@ -350,7 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				506C1CD61A2FA8E20034ECD1 /* HitboxURLConnection+SharedOperationQueue.m in Sources */,
-				506C1CEC1A2FAA000034ECD1 /* HitboxAuthToken.m in Sources */,
+				506C1CEC1A2FAA000034ECD1 /* HitboxAuthorization.m in Sources */,
 				506C1D051A2FB1F30034ECD1 /* HitboxAuthTokenRequest.m in Sources */,
 				506C1D171A2FCC150034ECD1 /* HitboxStreamIngest.m in Sources */,
 				506C1CDE1A2FA8E20034ECD1 /* HitboxJSONResponse.m in Sources */,

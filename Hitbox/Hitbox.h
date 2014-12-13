@@ -27,7 +27,7 @@ FOUNDATION_EXPORT const unsigned char HitboxVersionString[];
 #import "HitboxJSONRequest.h"
 #import "HitboxJSONResponse.h"
 
-#import "HitboxAuthToken.h"
+#import "HitboxAuthorization.h"
 #import "HitboxAuthTokenRequest.h"
 #import "HitboxAuthTokenResponse.h"
 

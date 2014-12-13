@@ -1,24 +1,24 @@
 #import "HitboxStreamIngestRequest.h"
 
-#import "HitboxAuthToken.h"
+#import "HitboxAuthorization.h"
 #import "HitboxStreamIngestResponse.h"
 
 
 @interface HitboxStreamIngestRequest ()
 
-@property (nonatomic, strong) HitboxAuthToken *authToken;
+@property (nonatomic, strong) HitboxAuthorization *authorization;
 
 @end
 
 
 @implementation HitboxStreamIngestRequest
 
-- (instancetype)initWithAuthToken:(HitboxAuthToken *)authToken
+- (instancetype)initWithAuthorization:(HitboxAuthorization *)authorization
 {
 	self = [super init];
 	if(self != nil)
 	{
-		self.authToken = authToken;
+		self.authorization = authorization;
 	}
 	return self;
 }
@@ -32,11 +32,11 @@
 {
 	// see: http://developers.hitbox.tv/ingesting
 
-	HitboxAuthToken *authToken = self.authToken;
+	HitboxAuthorization *authorization = self.authorization;
 	
 	NSURLComponents *components = [[NSURLComponents alloc] initWithURL:self.class.baseURL resolvingAgainstBaseURL:NO];
-	components.path = [[components.path stringByAppendingPathComponent:@"streamingest"] stringByAppendingPathComponent:authToken.username];
-	components.query = [NSString stringWithFormat:@"authToken=%@", authToken.authToken];
+	components.path = [[components.path stringByAppendingPathComponent:@"streamingest"] stringByAppendingPathComponent:authorization.username];
+	components.query = [NSString stringWithFormat:@"authToken=%@", authorization.authToken];
 
 	return components.URL;
 }

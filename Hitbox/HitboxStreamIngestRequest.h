@@ -1,10 +1,10 @@
 #import "HitboxJSONRequest.h"
 
-@class HitboxAuthToken;
+@class HitboxAuthorization;
 
 
 @interface HitboxStreamIngestRequest : HitboxJSONRequest
 
-- (instancetype)initWithAuthToken:(HitboxAuthToken *)authToken;
+- (instancetype)initWithAuthorization:(HitboxAuthorization *)authorization;
 
 @end
